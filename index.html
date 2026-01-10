@@ -1,0 +1,354 @@
+<html lang="en" style="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Property Showcase</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body class="">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+                        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                                <!-- Stylish Logo SVG -->
+                                <span class="urbanedge-logo" aria-label="UrbanEdge Homes logo">
+                                    <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" y="20" width="40" height="20" rx="4" fill="#212529"/>
+                                        <rect x="12" y="12" width="24" height="16" rx="3" fill="#495057"/>
+                                        <path d="M24 4L40 20H8L24 4Z" fill="#0d6efd"/>
+                                        <rect x="20" y="28" width="8" height="12" rx="2" fill="#fff"/>
+                                    </svg>
+                                </span>
+                                <span class="urbanedge-title">UrbanEdge Homes</span>
+                        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#address">Address</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:qwerty@gmail.com"
+                            id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5 mb-4 border-bottom">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">UrbanEdge Homes</h1>
+                <style>
+                    .urbanedge-logo svg {
+                        display: block;
+                    }
+                    .urbanedge-title {
+                        font-family: 'Segoe UI', 'Arial', sans-serif;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        letter-spacing: 1px;
+                        color: #fff;
+                    }
+                    .navbar-dark .urbanedge-title {
+                        color: #fff;
+                    }
+                    @media (max-width: 991.98px) {
+                        .urbanedge-title {
+                            font-size: 1.1rem;
+                        }
+                        .urbanedge-logo svg {
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                </style>
+            <p class="lead">1234 Oakwood Drive, Springfield</p>
+        </div>
+    </header>
+
+    <!-- Gallery section moved to top -->
+    <section>
+        <div class="container my-4" id="gallery">
+            <h2 class="mb-4">Gallery</h2>
+            <div class="row g-4 magnific-gallery">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card h-100 shadow-sm position-relative">
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 fs-5 px-3 py-2 shadow"
+                            style="z-index:2;">$850,000</span>
+                        <a href="https://imagescdn.homes.com/i2/4wji9472J9QhETjkpENhtZ88wLvUt94TmjULygLg9H4/117/64-pine-glade-ct-la-plata-md-primaryphoto.jpg?p=1"
+                            class="popup-link" titsle="Living Room">
+                            <img src="https://imagescdn.homes.com/i2/4wji9472J9QhETjkpENhtZ88wLvUt94TmjULygLg9H4/117/64-pine-glade-ct-la-plata-md-primaryphoto.jpg?p=1"
+                                class="card-img-top img-fluid" aslt="Living Room"
+                                style="height: 350px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/tUeCSwnoLKCEU7nu85ZThodHVEX_KP1g-QhOKFtEeFo/117/64-pine-glade-ct-la-plata-md--3.jpg?p=1"
+                            class="popup-link" #="Kitchen">
+                            <img src="https://imagescdn.homes.com/i2/tUeCSwnoLKCEU7nu85ZThodHVEX_KP1g-QhOKFtEeFo/117/64-pine-glade-ct-la-plata-md--3.jpg?p=1"
+                                class="card-img-top" alt="Kitchen">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/4NkK0AKVZH3pN_q58d33WlyQk-fvAoXbmwioeEtE-0A/117/64-pine-glade-ct-la-plata-md--7.jpg?p=1"
+                            class="popup-link" #="Master Bedroom">
+                            <img src="https://imagescdn.homes.com/i2/4NkK0AKVZH3pN_q58d33WlyQk-fvAoXbmwioeEtE-0A/117/64-pine-glade-ct-la-plata-md--7.jpg?p=1"
+                                class="card-img-top" alt="Master Bedroom">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/VVtRN1Kk4nyA2zfuZu5JaRqdywKbnOKLS6Ct_1yQv1U/117/64-pine-glade-ct-la-plata-md--5.jpg?p=1"
+                            class="popup-link" #="Bathroom">
+                            <img src="https://imagescdn.homes.com/i2/VVtRN1Kk4nyA2zfuZu5JaRqdywKbnOKLS6Ct_1yQv1U/117/64-pine-glade-ct-la-plata-md--5.jpg?p=1"
+                                class="card-img-top" alt="Bathroom">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/xJexN5y0CAXyDYRPAZKUIfxgx9FOLohjkY-RJt6ARvY/117/64-pine-glade-ct-la-plata-md--6.jpg?p=1"
+                            class="popup-link" #="Backyard">
+                            <img src="https://imagescdn.homes.com/i2/xJexN5y0CAXyDYRPAZKUIfxgx9FOLohjkY-RJt6ARvY/117/64-pine-glade-ct-la-plata-md--6.jpg?p=1"
+                                class="card-img-top" alt="Backyard">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/PoDXFJx0LnYKZuv2gH7QSGFqS8J_tP8Q3kc2WcBcqiw/117/64-pine-glade-ct-la-plata-md--4.jpg?p=1"
+                            class="popup-link" #="Dining Area">
+                            <img src="https://imagescdn.homes.com/i2/PoDXFJx0LnYKZuv2gH7QSGFqS8J_tP8Q3kc2WcBcqiw/117/64-pine-glade-ct-la-plata-md--4.jpg?p=1"
+                                class="card-img-top" alt="Dining Area">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/Y13gzxmtOZWTDBFcwah21KvxJsm8EbUyRfS3MTmYXYw/110/64-pine-glade-ct-la-plata-md-11.jpg?p=1"
+                            class="popup-link" #="Home Office">
+                            <img src="https://imagescdn.homes.com/i2/Y13gzxmtOZWTDBFcwah21KvxJsm8EbUyRfS3MTmYXYw/110/64-pine-glade-ct-la-plata-md-11.jpg?p=1"
+                                class="card-img-top" alt="Home Office">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/zls4o4CTM2c9uoOoJFBu26a9jpGwosazz6EeWJUoQ1E/110/64-pine-glade-ct-la-plata-md-20.jpg?p=1"
+                            class="popup-link" #="Garage">
+                            <img src="https://imagescdn.homes.com/i2/zls4o4CTM2c9uoOoJFBu26a9jpGwosazz6EeWJUoQ1E/110/64-pine-glade-ct-la-plata-md-20.jpg?p=1"
+                                class="card-img-top" alt="Garage">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <a href="https://imagescdn.homes.com/i2/7CYf49qYLabT3dwJEdb63p47b0W8hhKipGfWQN18LHM/110/64-pine-glade-ct-la-plata-md-29.jpg?p=1"
+                            class="popup-link" #="Patio">
+                            <img src="https://imagescdn.homes.com/i2/7CYf49qYLabT3dwJEdb63p47b0W8hhKipGfWQN18LHM/110/64-pine-glade-ct-la-plata-md-29.jpg?p=1"
+                                class="card-img-top" alt="Patio">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <div class="container my-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-3">Location Map</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3014.9296529387143!2d-76.97384!3d38.543585!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1768029179563!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="address" class="address-section">
+        <div class="container my-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Property Address</h2>
+                    <address class="mb-0">
+                        7890 Demo Lane,<br>
+                        Example City, EX 12345<br>
+                        United States
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview">
+        <div class="container my-4" id="overview">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title">The Pine: Comfort, Value & Community</h2>
+                            <p class="card-text">
+                                Discover the perfect blend of comfort, value, and community with The Pine, a beautifully designed 1,964 sq. ft. single-family home located in the highly sought-after Pinegrove neighborhood of La Plata, Maryland. This spacious two-level home features 4 bedrooms and 2.5 bathrooms, offering the ideal layout for today’s modern family.<br><br>
+                                Step inside to an open-concept main floor that makes everyday living effortless—whether it’s family dinners, game nights, or entertaining friends. The thoughtfully planned second level includes a private owner’s suite, generous secondary bedrooms, and convenient storage, giving every family member room to grow.<br><br>
+                                Living in Pinegrove means more than just owning a home—it’s joining a welcoming, family-focused community. Tree-lined streets, peaceful surroundings, and that small-town charm make this neighborhood a place where memories are made and roots are planted.<br><br>
+                                With La Plata’s affordability, owning a spacious single-family home becomes an attainable path to long-term wealth and stability. Enjoy the comfort of a brand-new home, modern construction, and the value of a community that truly feels like home—all just a short drive from major commuter routes, shopping, dining, and top-rated schools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card h-100 bg-light shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Key Highlights</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Bedrooms:</strong> 4</li>
+                                <li class="list-group-item"><strong>Bathrooms:</strong> 2.5</li>
+                                <li class="list-group-item"><strong>Area:</strong> 1,964 sq. ft.</li>
+                                <li class="list-group-item"><strong>Levels:</strong> 2</li>
+                                <li class="list-group-item"><strong>Community:</strong> Pinegrove, La Plata, MD</li>
+                                <li class="list-group-item"><strong>Modern layout designed for comfort, connection, and everyday living.</strong></li>
+                                <li class="list-group-item"><strong>Single-Family Living at an Affordable Price Point</strong></li>
+                                <li class="list-group-item"><strong>Family-Friendly Pinegrove Community</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4" id="gallery">
+
+
+        </div>
+
+        <section>
+            <div class="container my-4" id="features">
+                <h2 class="mb-4">Features</h2>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item">Open-concept living &amp; dining</li>
+                            <li class="list-group-item">Chef's kitchen with island</li>
+                            <li class="list-group-item">Hardwood floors throughout</li>
+                            <li class="list-group-item">Primary suite with walk-in closet</li>
+                            <li class="list-group-item">Energy-efficient appliances</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item">Smart home technology</li>
+                            <li class="list-group-item">Two-car garage</li>
+                            <li class="list-group-item">Private backyard with patio</li>
+                            <li class="list-group-item">Central heating &amp; cooling</li>
+                            <li class="list-group-item">Close to parks and schools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="container my-4" id="contact">
+                    <h2 class="mb-4">Contact</h2>
+                    <form class="row g-3 contact-form bg-light p-4 rounded shadow-sm">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required="">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" rows="5" class="form-control" placeholder="Your Message"
+                                required=""></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-dark px-4">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Magnific Popup JS -->
+                <!-- Bootstrap 5 JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- jQuery (required for Magnific Popup) -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <!-- Magnific Popup JS -->
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                <script src="script.js"></script>
+
+
+            </section>
+        </section>
+    </section>
+
+
+
+    <!-- Floating Contact Button (Top Right) -->
+    <a href="mailto:wallacejustin618@gmail.com" class="floating-contact floating-contact-bottom" title="Contact via Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+            <rect width="100%" height="100%" rx="8" fill="#212529"/>
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.383V5.383zm-.034 6.434-5.482-3.29-5.482 3.29A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-1.183zM1 11.383l4.708-3.175L1 5.383v6z"/>
+        </svg>
+    </a>
+    <style>
+        .floating-contact {
+            position: fixed;
+            z-index: 1050;
+            background: #212529;
+            color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .floating-contact:hover {
+            background: #495057;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+        }
+        .floating-contact svg {
+            width: 32px;
+            height: 32px;
+        }
+        .floating-contact-bottom {
+            bottom: 32px;
+            right: 32px;
+            top: auto;
+        }
+        @media (max-width: 991.98px) {
+            .floating-contact-bottom {
+                bottom: 16px;
+                right: 12px;
+            }
+        }
+    </style>
+</body>
+
+</html>
