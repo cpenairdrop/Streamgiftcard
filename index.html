@@ -192,8 +192,9 @@
                 <div class="card-body">
                     <h2 class="card-title">Property Address</h2>
                     <address class="mb-0">
-                        7890 Demo Lane,<br>
-                        Example City, EX 12345<br>
+                     l mn    64 Pine Glade Ct<br>
+                        La Plata, MD 20646<br>
+                        Charles County<br>
                         United States
                     </address>
                 </div>
@@ -298,6 +299,59 @@
                 <script
                     src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
                 <script src="script.js"></script>
+                                <script>
+                                    // Magnific Popup initialization
+                                    $(document).ready(function() {
+                                        $('.magnific-gallery').magnificPopup({
+                                            delegate: 'a.popup-link',
+                                            type: 'image',
+                                            gallery: {
+                                                enabled: true
+                                            },
+                                            image: {
+                                                verticalFit: true
+                                            }
+                                        });
+                                    });
+
+                                    // Telegram contact form integration
+                                    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+                                        e.preventDefault();
+                                        var name = this.name.value;
+                                        var email = this.email.value;
+                                        var message = this.message.value;
+                                        var botToken = '7194535238:AAFlhKQ4OSR6j-6Lwc9mq_Aa1PQ_kc87BAo';
+                                        var chatId = '-1003692098820';
+                                        var text = `New Contact Form Submission:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+                                        var url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+                                        fetch(url)
+                                            .then(response => {
+                                                if (response.ok) {
+                                                    alert('Message sent successfully!');
+                                                    this.reset();
+                                                } else {
+                                                    alert('Failed to send message.');
+                                                }
+                                            })
+                                            .catch(() => {
+                                                alert('Failed to send message.');
+                                            });
+                                    });
+                                </script>
+                <script>
+                    $(document).ready(function() {
+                        $('.magnific-gallery').magnificPopup({
+                            delegate: 'a.popup-link',
+                            type: 'image',
+                            gallery: {
+                                enabled: true
+                            },
+                            image: {
+                                verticalFit: true
+                            }
+                        });
+                    });
+                </script>
 
 
             </section>
